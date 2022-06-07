@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		// Target latest version of ECMAScript.
+		"target": "ES2021",
+		"module": "Node16",
+		// Search under node_modules for non-relative imports.
+		"moduleResolution": "node",
+		// Process & infer types from .js files.
+		"allowJs": false,
+		// Don't emit; allow Babel to transform files.
+		"noEmit": false,
+		// true is better but requires a global refactoring.
+		"strict": false,
+		"sourceMap": true,
+		"outDir": "dist/",
+		"pretty": true,
+		"removeComments": true,
+		"downlevelIteration": true,
+		"listFiles": false,
+		"listEmittedFiles": false,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true
+	},
+	"include": [
+		"src"
+	],
+}
