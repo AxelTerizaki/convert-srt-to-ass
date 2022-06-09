@@ -3,3 +3,8 @@ tsconfig.json
 test/
 .eslintrc.json
 yarn.lock
+.github
+CHANGELOG.md
+README.md
+src/**/*
+!src/**/*.d.ts
