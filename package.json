@@ -6,7 +6,7 @@
   "types": "src/types.d.ts",
   "type": "module",
   "bin": {
-    "srt2ass": "dist/index.js"
+    "srt2ass": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc --build",
