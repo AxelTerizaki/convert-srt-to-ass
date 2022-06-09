@@ -1,6 +1,6 @@
 {
-  "name": "srt2ass",
-  "version": "1.0.0",
+  "name": "convert-srt-to-ass",
+  "version": "1.0.1",
   "description": "Convert SRT subtitles to ASS",
   "main": "dist/index.js",
   "types": "src/types.d.ts",
@@ -15,7 +15,8 @@
   "keywords": [
     "karaoke",
     "ass",
-    "srt"
+    "srt",
+	"convert"
   ],
   "author": "Guillaume Lebigot <axel@teri-chan.net>",
   "license": "MIT",

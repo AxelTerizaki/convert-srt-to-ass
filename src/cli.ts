@@ -4,8 +4,8 @@ import { convertToASS } from './index.js';
 
 async function mainCLI() {
 	if (!process.argv[2]) {
-		throw `srt2ass - Convert SRT to ASS file
-		Usage: srt2ass myfile.srt
+		throw `convert-srt-to-ass - Convert SRT to ASS file
+		Usage: convert-srt-to-ass myfile.srt
 		Output goes to stdout
 		`;
 	}
