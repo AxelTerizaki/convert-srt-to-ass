@@ -4,6 +4,8 @@ This is a converter for SRT files to ASS, written in nodeJS.
 
 This is used by [Karaoke Mugen](https://karaokes.moe) but can be freely used by just anything else.
 
+WARNING : this is an ES Module.
+
 ## Installation
 
 Run `npm install -g srt2ass` to install as a global module (and get the CLI version)
