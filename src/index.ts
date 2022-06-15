@@ -31,6 +31,7 @@ function sortStartTime(a: any, b: any) {
 
 /** Parse SRT into something actually usable. Also replaces SRT tags by ASS tags */
 export function parseSRT(srt: string): {startTime: string, endTime: string, text: string}[] {
+	// Windows' CRLFs are a pain, please kill them.
 	const rawArr = srt.replaceAll('\r', '').split('\n');
 	const ass = [];
 	let subSegment = {
@@ -68,11 +69,10 @@ export function parseSRT(srt: string): {startTime: string, endTime: string, text
 			continue;
 		}
 		// Last possibility is that this contains text. So we're adding it.
-		sub.push(convertSRTTags(line)
-		);
+		sub.push(convertSRTTags(line));
 	}
 	if (insideSubSegment) {
-		subSegment.text = sub.join('\N');
+		subSegment.text = sub.join('\\N');
 		ass.push(subSegment);
 	}
 	return ass;
