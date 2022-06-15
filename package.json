@@ -1,6 +1,6 @@
 {
   "name": "convert-srt-to-ass",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Convert SRT subtitles to ASS",
   "main": "dist/index.js",
   "types": "src/types.d.ts",
